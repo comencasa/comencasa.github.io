@@ -1,0 +1,363 @@
+@font-face {
+  font-family: "fuente";
+  src: url("../fuentes/Home\ of\ Smile.otf");
+}
+
+/*Header*/
+.row {
+  padding-left: 20px;
+}
+select option:hover {
+  background-color: #ba0c2f;
+}
+header {
+  background-color: #ba0c2f;
+}
+#titulo {
+  font-family: fuente;
+  color: black;
+  font-size: calc(1.375rem + 2vw);
+}
+
+.logo {
+  margin-left: 1%;
+  margin-top: 0.3%;
+  width: 4%;
+}
+.form {
+  display: flex;
+}
+
+nav {
+  text-align: center;
+}
+.boton {
+  background-color: #ba0c2f;
+  margin-top: 0.5%;
+  margin-left: 0.5%;
+  color: white;
+  border-radius: 7px;
+  padding: 1vh;
+  border: 0px;
+}
+.boton:hover {
+  background-color: #9f0e2b;
+}
+#buscar {
+  margin-top: 0.5%;
+  margin-left: 0.5%;
+  border-radius: 7px;
+  padding: 1vh;
+  border: 0px;
+}
+#limpiar {
+  margin-top: 0.5%;
+  margin-left: 0.5%;
+  border-radius: 7px;
+  padding: 1vh;
+  border: 0px;
+}
+
+/*Main*/
+body {
+  min-height: 100vh;
+  width: 100%;
+
+}
+img + a {
+  text-decoration: none;
+  color: #cb1237;
+}
+img + a:hover {
+  color: #3145f7;
+}
+#map {
+  width: 70vw;
+  height: 70vh;
+}
+#mensaje {
+  text-align: center;
+}
+.izquierda {
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.envioParrafo {
+  display: flex;
+  justify-content: space-evenly;
+}
+.recoger {
+  width: 15%;
+}
+.noRecoger {
+  width: 15%;
+  filter: grayscale(100%);
+}
+.envio {
+  width: 15%;
+}
+.noEnvio {
+  width: 15%;
+  filter: grayscale(100%);
+}
+.justificado {
+  text-align: justify;
+}
+.card {
+  border: 1px solid black;
+  margin: 10px;
+  box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  border-radius: 10px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  overflow: hidden; /* Limita el contenido a los bordes de la tarjeta */
+}
+.card p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.triste {
+  width: 20%;
+}
+
+#botones {
+  display: flex;
+  flex-direction: row;
+}
+#buscar{
+  margin-right: 5px;
+}
+.bar {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  color: black;
+  vertical-align: middle;
+  background-image: url("../imagenes/cerveza.PNG");
+  background-size: cover;
+  text-align: center;
+}
+.bar h3 {
+  font-family: fuente;
+  font-size: 5vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+.cafeteria {
+  position: relative;
+  height: 15vh;
+  color: white;
+  background-image: url("../imagenes/cafe.PNG");
+  background-size: cover;
+  text-align: center;
+}
+.cafeteria h3 {
+  font-family: fuente;
+  font-size: 5vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+.salon {
+  position: relative;
+  height: 15vh;
+  color: black;
+  background-image: url("../imagenes/banquete.PNG");
+  background-size: cover;
+  text-align: center;
+}
+.salon h3 {
+  font-family: fuente;
+  font-size: 5vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+.restaurante {
+  position: relative;
+  height: 15vh;
+  color: black;
+  background-image: url("../imagenes/comida.PNG");
+  background-size: cover;
+  text-align: center;
+}
+.restaurante h3 {
+  font-family: fuente;
+  position: absolute;
+  font-size: 5vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+/*Footer*/
+footer {
+  display: table;
+  width: 100%;
+  height: auto;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  margin-top: 5%;
+}
+
+@media (max-width: 767px) {
+  #map{
+  width: 100%;
+ }
+  .recoger {
+    scale: 50%;
+  }
+  .noRecoger {
+    scale: 50%;
+    filter: grayscale(100%);
+  }
+  .envio {
+    scale: 50%;
+  }
+  .noEnvio {
+    scale: 50%;
+    filter: grayscale(100%);
+  }
+  
+  #titulo {
+    text-align: center;
+    font-size: calc(1.375rem + 6vw);
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .select {
+    border-radius: 10px; /* Aplica bordes redondeados de 10px */
+  background-color: #fff; /* Fondo blanco */
+  padding: 10px; /* Padding de 10px */
+  border: none; /* Quita el borde predeterminado */
+  outline: none; /* Quita el contorno de selección predeterminado */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Aplica sombra */
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+  }
+  #botones {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn {
+    width: 95%;
+    margin: 5px;
+  }
+  .restaurante h3{
+    font-size: 10vw;
+  }
+  .bar{
+    font-size: 10vw;
+  }
+  .cafeteria{
+    font-size: 10vw;
+  }
+  .salon{
+    font-size: 10vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .select {
+    border-radius: 10px; /* Aplica bordes redondeados de 10px */
+    background-color: #fff; /* Fondo blanco */
+    padding: 10px; /* Padding de 10px */
+    border: none; /* Quita el borde predeterminado */
+    outline: none; /* Quita el contorno de selección predeterminado */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Aplica sombra */
+    margin: 5px;
+    width: 80%;
+  }
+
+  #botones {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn {
+    width: 50%;
+    margin: 5px;
+  }
+  .restaurante h3{
+    font-size: 5vw;
+  }
+  .bar{
+    font-size: 5vw;
+  }
+  .cafeteria{
+    font-size: 5vw;
+  }
+  .salon{
+    font-size: 5vw;
+  }
+}
+
+@media (min-width: 992px) {
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .select {
+    border-radius: 10px; /* Aplica bordes redondeados de 10px */
+    background-color: #fff; /* Fondo blanco */
+    padding: 8px; /* Padding de 10px */
+    border: none; /* Quita el borde predeterminado */
+    outline: none; /* Quita el contorno de selección predeterminado */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Aplica sombra */
+    margin: 5px;
+    width: 80%;
+  }
+  #botones{
+    margin: 10px;
+  }
+  #buscar{
+    margin-right: 10px;
+  }
+  footer{
+  width: 100%;
+  height: auto;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  
+  }
+  body {
+  height: 100%;
+  width: 100%;
+}
+
+}
